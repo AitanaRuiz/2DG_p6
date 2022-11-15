@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary:#8A8989;
+            --color-secundary:#B1B1B1;
+            --color-bg:#D4D2D1;
+            --color-black:#320F0F;
+        }
+        .card_txt{
+            font-family: 'Roboto', sans-serif;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 28%;
+            flex-direction: column;
+            border: var(--color-secundary) solid 0.3cm;
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:first-child img{
+            object-position: top 3cm;
+        }
+        .card:nth-child(2), .card:nth-child(3){
+            flex: 1 3 60%;
+        }
+        .card img{
+            object-position: top 3cm;
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            display: flex;
+            flex-direction: column;
+            padding: 2cm 0 0 0;
+            justify-content: baseline;
+            height: 100%;
+        }
+        .card_txt h1{
+            font-size: 1em;
+            padding: 0 0 0.5cm;
+            flex-grow: 0;
+            color: var(--color-primary);
+            letter-spacing: 0.25cm;
+            font-variant: small-caps;
+        }
+        .card_txt h2{
+            justify-content: flex-start;
+            font-size: 1cm;
+            color:var(--color-secundary);
+            font-weight: 700;
+        }
+        .card_txt p{
+            padding: 1cm 0 0 0;
+            font-weight: 100;
+            font-size: 0.4cm;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Caravaggio</h1>
+                    <h2>The Musicians</h2>
+                    <p>While Cupid confirms Caravaggio allegorical frame for representing Music, the artist equally engages with contemporary performance and individualized models, including a self-portrait in the second boy from the right.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Lilly Martin Spencer </h1>
+                    <h2>Young Husband: First Marketing</h2>
+                    <p>Spencer portrayed the unvarnished reality of male-female relationships in this painting, which chronicles the travails of early married life. </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Claude Lorrain</h1>
+                    <h2>The Trojan Women Setting Fire to Their Fleet</h2>
+                    <p>Claude Lorrain’s luminous skies and atmospheric effects are milestones in European painting. Like his contemporary Poussin, Claude viewed landscape through a classical lens: he represents the women of Troy setting fire to their ships in an effort to end years of wandering after their city was seized by the Greeks.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>William A. Harper </h1>
+                    <h2>The Trees</h2>
+                    <p>This rare work by the Black landscape painter William A. Harper depicts a bucolic scene in the French countryside. Canadian-born and Chicago-trained, Harper also studied informally in Paris with Henry Ossawa Tanner, the leading African American expatriate of his generation. </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Joachim Beuckelaer</h1>
+                    <h2>Fish Market</h2>
+                    <p>Signed and dated 1568, this masterfully composed view of a daily fish market represents the new genre of still-life painting, initiated by Joachim Beuckelaer and his teacher, Pieter Aertsen, who lived and worked in Antwerp. It was painted during the tumultuous times of the Iconoclasm (1566), which disrupted the art market and motivated a change from purely religious to more secular themes. </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Honoré Daumier</h1>
+                    <h2>The Third-Class Carriage</h2>
+                    <p>As a graphic artist and painter, Daumier chronicled the impact of industrialization on modern urban life in mid-nineteenth-century Paris. Here, he amplifies the subject of a lithograph made some ten years earlier: the hardship and quiet fortitude of third-class railway travelers. Bathed in light, the nursing mother, elderly woman, and sleeping boy emanate a serenity not often associated with public transport.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
